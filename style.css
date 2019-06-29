@@ -3,52 +3,60 @@
     src: url(https://fonts.googleapis.com/css?family=Oswald) format("truetype");
     font-family: 'Roboto Condensed', sans-serif;
 }
+
 * {
     padding: 0;
     margin: 0;
 }
+
 body {
     background: #2e404e;
     color: #f4f4f4;
     height: 100vh;
     line-height: 1.6;
-    font-family:Roboto Condensed;
+    font-family: Roboto Condensed;
 }
-.container{
+
+.container {
     height: 100%;
     width: 100%;
 }
-/*Navbar*/
-.navbar{
+
+/*Navbar1*/
+.navbar1 {
     position: fixed;
     top: 0;
     z-index: 1;
     display: flex;
-    width: 50%;
+    width: 51.5%;
     height: 90px;
     background: rgba(46, 64, 78, 0.5);
+    border-bottom: 3px solid #a5a5a5;
 }
-.navbar ul {
+
+.navbar1 ul {
     display: flex;
     list-style: none;
     width: 60%;
     justify-content: left;
-    border-bottom: #a5a5a5;
-    border-bottom-width: 2px;
 }
-.navbar ul li {
+
+.navbar1 ul li {
     margin: 0px 10px;
-    padding: 20px 40px;
+    padding: 20px 60px;
 }
-.navbar ul li a{
+
+.navbar1 ul li a {
     text-decoration: none;
     text-transform: uppercase;
     font-size: 30px;
-    color: #f4f4f4; 
+    color: #f4f4f4;
 }
-.navbar ul li a:hover{
+
+.navbar1 ul li a:hover {
     color: #a5a5a5;
 }
+
 /*Section Home*/
 #Home {
     position: relative;
@@ -61,12 +69,14 @@ body {
     text-align: center;
     clip-path: polygon(100% 0, 54% 0, 27% 100%, 100% 100%);
 }
+
 #Home h1 {
     font-family: Oswald;
     font-size: 50px;
 }
+
 #Home div.butn {
-    margin:30px;
+    margin: 30px;
 }
 
 .butn {
@@ -79,7 +89,8 @@ body {
     padding: 10px 40px 10px 40px;
     text-decoration: none;
 }
-.butn a{
+
+.butn a {
     text-decoration: none;
     color: #2e404e;
 }
@@ -88,11 +99,13 @@ body {
     background: #c9c9c9;
     text-decoration: none;
 }
+
 section#Home {
     background: #2e404e url("img/home.jpg") no-repeat center center/cover;
     background-size: 90%;
     background-position-x: 180%;
 }
+
 /*Section About*/
 #About {
     width: 100%;
@@ -102,7 +115,15 @@ section#Home {
     align-items: center;
     justify-content: center;
     text-align: center;
+    clip-path: polygon(0 0, 27% 0, 50% 100%, 0% 100%);
 }
+section#About {
+    background: #2e404e url("img/about.jpg") no-repeat;
+    background-size: 80%;
+    background-position-x: -100%;
+    background-position-y: -30%;
+}
+
 /*Section Portfolio*/
 #Portfolio {
     width: 100%;
@@ -113,8 +134,9 @@ section#Home {
     justify-content: center;
     text-align: center;
 }
+
 /*Section Contact*/
-#Contact{
+#Contact {
     width: 100%;
     height: 100vh;
     display: flex;
